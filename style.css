@@ -1,3 +1,21 @@
 body {
+h2 {
+  color: blue;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px lightblue;
+}
 
+body {
+  background-color: darkblue;
+}
+
+img {
+  border: dashed lightblue 5px;
+  width: 600px
+}
+
+img:hover {
+  width: 55%;
+}
 }
