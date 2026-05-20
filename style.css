@@ -1,4 +1,3 @@
-body {
 h2 {
   color: blue;
   text-align: center;
@@ -18,4 +17,4 @@ img {
 img:hover {
   width: 55%;
 }
-}
+
