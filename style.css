@@ -6,7 +6,10 @@ h2 {
 }
 
 body {
-  background-color: darkblue;
+  padding-top: 100px; 
+  text-align: center;
+  background-color: #0b2545; /* This makes the background dark blue */
+  color: #eeffff;            /* This makes your <h2> text white/light blue so you can read it! */
 }
 
 img {
