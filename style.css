@@ -1,8 +1,8 @@
 h2 {
-  color: blue;
+  color: #13b1a4;              /* Changed from 'blue' to your bright teal accent color so it stands out! */
   text-align: center;
   letter-spacing: 5px;
-  text-shadow: 2px 2px lightblue;
+  text-shadow: 2px 2px #000000; /* Changed the shadow to black so the text pops off the dark background */
 }
 
 body {
@@ -14,10 +14,9 @@ body {
 
 img {
   border: dashed lightblue 5px;
-  width: 600px
+  width: 600px;                /* FIXED: Added the missing semicolon here */
 }
 
 img:hover {
-  width: 55%;
+  width: 55%;                  /* This will now work perfectly! */
 }
-
