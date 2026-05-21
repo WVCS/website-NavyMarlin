@@ -4,23 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h2> Chloe Moore's Website </h2>
- <center>
-   <br>
-  <img src="https://coralvita.co/wp-content/uploads/2025/05/Coral-Reef-Fish.webp">
-  </center>
-  
-  
-</body>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Chloe Moore's Website</title>
   
   <style>
   /* CRITICAL: This removes the browser's default margin so the navbar touches the exact top and sides */
@@ -46,7 +30,7 @@
     padding: 1.2rem 2rem;
     
     /* Forces it to the absolute top and stretches it full width */
-    position: fixed; /* Changed to fixed so it stays pinned even if you scroll */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -115,7 +99,7 @@
   /* Responsive adjustment for mobile screens */
   @media (max-width: 650px) {
     .navbar {
-      position: relative; /* Switches off fixed positioning on mobile so it doesn't eat up screen space */
+      position: relative; 
       flex-direction: column;
       gap: 1.2rem;
       padding: 1rem;
@@ -135,9 +119,10 @@
     }
   }
 
-  /* Added padding to body so the fixed navbar doesn't cover Chloe's header */
+  /* Added padding to body so the fixed navbar doesn't cover content */
   body {
-    padding-top: 80px; 
+    padding-top: 100px; 
+    text-align: center;
   }
   </style>
 </head>
@@ -146,10 +131,14 @@
   <nav class="navbar">
     <div class="logo">🌊 DeepBlue</div>
     <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="reefs.html">The Reefs</a></li>
     </ul>
   </nav>
+
+  <h2>Chloe Moore's Website</h2>
+  <br>
+  <img src="https://coralvita.co/wp-content/uploads/2025/05/Coral-Reef-Fish.webp" alt="Coral Reef Fish" style="max-width: 100%; height: auto;">
   
 </body>
 </html>
