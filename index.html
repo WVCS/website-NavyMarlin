@@ -4,9 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chloe Moore's Website</title>
+  <title>Document</title>
+</head>
+<body>
+  <h2> Chloe Moore's Website </h2>
+ <center>
+   <br>
+  <img src="https://coralvita.co/wp-content/uploads/2025/05/Coral-Reef-Fish.webp">
+  </center>
+  
+  
+</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   
   <style>
+  /* CRITICAL: This removes the browser's default margin so the navbar touches the exact top and sides */
   html, body {
     margin: 0;
     padding: 0;
@@ -27,31 +44,39 @@
     align-items: center;
     background-color: #0b2545; 
     padding: 1.2rem 2rem;
-    position: fixed; 
+    
+    /* Forces it to the absolute top and stretches it full width */
+    position: fixed; /* Changed to fixed so it stays pinned even if you scroll */
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    
     border-bottom: 4px solid #eef4f8; 
     box-shadow: 0 4px 12px rgba(11, 37, 69, 0.15);
   }
 
+  /* Logo styling */
   .logo {
     color: #8da9c4; 
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
+    cursor: pointer;
   }
 
+  /* Navigation links container */
   .nav-links {
     display: flex;
     list-style: none;
   }
 
+  /* Individual link items */
   .nav-links li {
     margin-left: 2rem;
   }
 
+  /* Styling the links */
   .nav-links a {
     color: #eeffff; 
     text-decoration: none;
@@ -63,12 +88,13 @@
     transition: color 0.3s ease;
   }
 
-  /* Active state logic */
+  /* Hover and Active states */
   .nav-links a:hover,
   .nav-links a.active {
     color: #13b1a4; 
   }
 
+  /* Underline effect */
   .nav-links a::after {
     content: '';
     position: absolute;
@@ -86,30 +112,32 @@
     width: 100%;
   }
 
+  /* Responsive adjustment for mobile screens */
   @media (max-width: 650px) {
     .navbar {
-      position: relative; 
+      position: relative; /* Switches off fixed positioning on mobile so it doesn't eat up screen space */
       flex-direction: column;
       gap: 1.2rem;
       padding: 1rem;
     }
+    
     .nav-links {
       width: 100%;
       justify-content: space-around;
     }
+    
     .nav-links li {
       margin-left: 0;
     }
+    
     .nav-links a::after {
       display: none; 
     }
   }
 
+  /* Added padding to body so the fixed navbar doesn't cover Chloe's header */
   body {
-    padding-top: 120px; 
-    text-align: center;
-    background-color: #0b2545; 
-    color: #eeffff;            
+    padding-top: 80px; 
   }
   </style>
 </head>
@@ -118,16 +146,10 @@
   <nav class="navbar">
     <div class="logo">🌊 DeepBlue</div>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="reefs.html">The Reefs</a></li>
     </ul>
   </nav>
-
-  <h2>Chloe Moore's Website</h2>
-  <br>
-  <center>
-    <img src="https://coralvita.co/wp-content/uploads/2025/05/Coral-Reef-Fish.webp" alt="Coral Reef Fish" style="max-width: 90%; height: auto; border-radius: 8px;">
-  </center>
   
 </body>
 </html>
