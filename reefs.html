@@ -4,7 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Reefs - Chloe Moore</title>
+  <title>Document</title>
+</head>
+<body>
+  <h2> Chloe Moore's Website </h2>
+ <center>
+   <br>
+  <img src="https://coralvita.co/wp-content/uploads/2025/05/Coral-Reef-Fish.webp">
+  </center>
+  
+  
+</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   
   <style>
   /* CRITICAL: This removes the browser's default margin so the navbar touches the exact top and sides */
@@ -30,7 +46,7 @@
     padding: 1.2rem 2rem;
     
     /* Forces it to the absolute top and stretches it full width */
-    position: fixed; 
+    position: fixed; /* Changed to fixed so it stays pinned even if you scroll */
     top: 0;
     left: 0;
     width: 100%;
@@ -99,7 +115,7 @@
   /* Responsive adjustment for mobile screens */
   @media (max-width: 650px) {
     .navbar {
-      position: relative; 
+      position: relative; /* Switches off fixed positioning on mobile so it doesn't eat up screen space */
       flex-direction: column;
       gap: 1.2rem;
       padding: 1rem;
@@ -119,16 +135,9 @@
     }
   }
 
-  /* Added padding to body so the fixed navbar doesn't cover content */
+  /* Added padding to body so the fixed navbar doesn't cover Chloe's header */
   body {
-    padding-top: 100px; 
-    text-align: center;
-  }
-  
-  /* Keeps the iframes neatly spaced */
-  iframe {
-    margin: 10px;
-    max-width: 100%;
+    padding-top: 80px; 
   }
   </style>
 </head>
@@ -137,14 +146,13 @@
   <nav class="navbar">
     <div class="logo">🌊 DeepBlue</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="reefs.html" class="active">The Reefs</a></li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="reefs.html">The Reefs</a></li>
     </ul>
   </nav>
-
-  <h2>Chloe Moore's Website</h2>
-  <br>
   
+</body>
+</html>
   <center>
     <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/4be41152-e287-4de7-a9b9-481c64d1bef6/embed"></iframe>
     
