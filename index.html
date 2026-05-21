@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Reefs - Chloe Moore</title>
+  <title>Chloe Moore's Website</title>
   
   <style>
   html, body {
@@ -41,7 +41,6 @@
     font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
-    cursor: pointer;
   }
 
   .nav-links {
@@ -64,6 +63,7 @@
     transition: color 0.3s ease;
   }
 
+  /* Active state logic */
   .nav-links a:hover,
   .nav-links a.active {
     color: #13b1a4; 
@@ -86,7 +86,6 @@
     width: 100%;
   }
 
-  /* Fixed and completed Responsive View Styles */
   @media (max-width: 650px) {
     .navbar {
       position: relative; 
@@ -94,51 +93,40 @@
       gap: 1.2rem;
       padding: 1rem;
     }
-    
     .nav-links {
       width: 100%;
       justify-content: space-around;
     }
-    
     .nav-links li {
       margin-left: 0;
     }
-    
     .nav-links a::after {
       display: none; 
     }
   }
 
-  /* Fixed Background Color Setup */
   body {
     padding-top: 120px; 
     text-align: center;
-    background-color: #0b2545; /* Dark blue page background */
-    color: #eeffff;            /* White header text */
+    background-color: #0b2545; 
+    color: #eeffff;            
   }
+  </style>
+</head>
+<body>
 
-  iframe {
-    margin: 15px;
-    border-radius: 8px;
-    max-width: 100%;
-  }
+  <nav class="navbar">
+    <div class="logo">🌊 DeepBlue</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="reefs.html">The Reefs</a></li>
+    </ul>
+  </nav>
 
   <h2>Chloe Moore's Website</h2>
   <br>
   <center>
     <img src="https://coralvita.co/wp-content/uploads/2025/05/Coral-Reef-Fish.webp" alt="Coral Reef Fish" style="max-width: 90%; height: auto; border-radius: 8px;">
-  </center>
-  </style>
-</head>
-<body>
-
-  <h2>Chloe Moore's Website - The Reefs</h2>
-  <br>
-  
-  <center>
-    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/4be41152-e287-4de7-a9b9-481c64d1bef6/embed"></iframe>
-    
-    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/669f1a4d-3292-4a62-a25d-4eba996bc8df/embed"></iframe>
   </center>
   
 </body>
