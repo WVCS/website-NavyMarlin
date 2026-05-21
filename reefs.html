@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2> Chloe Moore's Website </h2>
+ <center>
+  <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/4be41152-e287-4de7-a9b9-481c64d1bef6/embed"></iframe>
+   <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/669f1a4d-3292-4a62-a25d-4eba996bc8df/embed"></iframe>
+   <br>
+   </body>
+
+<nav class="navbar">
+  <div class="logo">🌊 DeepBlue</div>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#reefs">The Reefs</a></li>
+  
+  </ul>
+</nav>
+
+<style>
+/* CRITICAL: This removes the browser's default margin so the navbar touches the exact top and sides */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b2545; 
+  padding: 1.2rem 2rem;
+  
+  /* Forces it to the absolute top and stretches it full width */
+  position: fixed; /* Changed to fixed so it stays pinned even if you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  border-bottom: 4px solid #eef4f8; 
+  box-shadow: 0 4px 12px rgba(11, 37, 69, 0.15);
+}
+
+/* Logo styling */
+.logo {
+  color: #8da9c4; 
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+/* Individual link items */
+.nav-links li {
+  margin-left: 2rem;
+}
+
+/* Styling the links */
+.nav-links a {
+  color: #eeffff; 
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+/* Hover and Active states */
+.nav-links a:hover,
+.nav-links a.active {
+  color: #13b1a4; 
+}
+
+/* Underline effect */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #13b1a4;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 650px) {
+  .navbar {
+    position: relative; /* Switches off fixed positioning on mobile so it doesn't eat up screen space */
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .nav-links li {
+    margin-left: 0;
+  }
+  
+  .nav-links a::after {
+    display: none; 
+  }
+}
+</style>
