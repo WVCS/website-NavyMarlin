@@ -3,6 +3,7 @@ h2 {
   text-align: center;
   letter-spacing: 5px;
   text-shadow: 2px 2px #000000; /* Changed the shadow to black so the text pops off the dark background */
+  text-decoration: underline;
 }
 
 body {
