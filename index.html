@@ -7,17 +7,19 @@
   <title>Chloe Moore's Website</title>
   
   <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    padding-top: 100px; /* Space for the fixed navbar */
+    text-align: center;
+    background-color: #0b2545; /* Dark blue background */
+    color: #eeffff;            /* White text color */
+    min-height: 100vh;
   }
 
   /* Navbar container */
@@ -86,31 +88,49 @@
     width: 100%;
   }
 
+  /* Main Content Layout */
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Responsive Mobile Settings */
   @media (max-width: 650px) {
+    body {
+      padding-top: 140px; /* Extra space for taller mobile menu */
+    }
+    
     .navbar {
-      position: relative; 
       flex-direction: column;
       gap: 1.2rem;
       padding: 1rem;
     }
+    
     .nav-links {
       width: 100%;
       justify-content: space-around;
     }
+    
     .nav-links li {
       margin-left: 0;
     }
+    
     .nav-links a::after {
       display: none; 
     }
-  }
-
-  /* Fixed Background Color Setup */
-  body {
-    padding-top: 120px; 
-    text-align: center;
-    background-color: #0b2545; /* Dark blue background */
-    color: #eeffff;            /* White text color */
   }
   </style>
 </head>
@@ -124,12 +144,10 @@
     </ul>
   </nav>
 
-  <h2>Chloe Moore's Website</h2>
-  <br>
-  <center>
-    <img src="https://coralvita.co/wp-content/uploads/2025/05/Coral-Reef-Fish.webp" alt="Coral Reef Fish" style="max-width: 90%; height: auto; border-radius: 8px;">
-  </center>
+  <main>
+    <h2>Chloe Moore's Website</h2>
+    <img src="https://coralvita.co/wp-content/uploads/2025/05/Coral-Reef-Fish.webp" alt="Coral Reef Fish" class="hero-img">
+  </main>
   
 </body>
 </html>
-
